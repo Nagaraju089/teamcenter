@@ -1,0 +1,28 @@
+-git config
+git init
+git clone
+git add
+git commit
+git diff
+git reset
+git status
+git rm
+git log
+git show
+git tag
+git branch
+git checkout
+git merge
+git remote
+git push
+git pull
+git stash
+
+<!-- Dropdown to Select Type of Customer -->
+<mat-form-field>
+<mat-label>Select Customer Type</mat-label>
+<mat-select (onSelectionChange)="getCustType($event)">
+<mat-option *ngFor="let obj of custType" (click)="getCustType(obj)" 
+[value]="obj.value"> {{ obj.viewValue }}</mat-option>
+</mat-select>
+</mat-form-field>
